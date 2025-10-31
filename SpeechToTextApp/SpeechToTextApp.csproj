@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SpeechToTextApp</AssemblyName>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NAudio" Version="2.2.1" />
+		<PackageReference Include="Whisper.net" Version="1.8.1" />
+		<PackageReference Include="Whisper.net.Runtime" Version="1.8.1" />
+		<PackageReference Include="Whisper.net.Runtime.Cuda" Version="1.8.1" />
+		<!-- Alternative: use all runtimes in one package:
+  <PackageReference Include="Whisper.net.AllRuntimes" Version="1.8.1" />
+  -->
+		<PackageReference Include="System.IO.Ports" Version="8.0.0" />
+	</ItemGroup>
+
+</Project>

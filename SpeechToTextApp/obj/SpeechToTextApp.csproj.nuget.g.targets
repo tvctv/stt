@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)whisper.net.runtime.cuda.windows\1.8.1\build\Whisper.net.Runtime.Cuda.Windows.targets" Condition="Exists('$(NuGetPackageRoot)whisper.net.runtime.cuda.windows\1.8.1\build\Whisper.net.Runtime.Cuda.Windows.targets')" />
+    <Import Project="$(NuGetPackageRoot)whisper.net.runtime.cuda.linux\1.8.1\build\Whisper.net.Runtime.Cuda.Linux.targets" Condition="Exists('$(NuGetPackageRoot)whisper.net.runtime.cuda.linux\1.8.1\build\Whisper.net.Runtime.Cuda.Linux.targets')" />
+    <Import Project="$(NuGetPackageRoot)whisper.net.runtime\1.8.1\build\Whisper.net.Runtime.targets" Condition="Exists('$(NuGetPackageRoot)whisper.net.runtime\1.8.1\build\Whisper.net.Runtime.targets')" />
+  </ImportGroup>
+</Project>
